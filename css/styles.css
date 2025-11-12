@@ -1,13 +1,207 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --font-light: 300;
+  --font-regular: 400;
+  --font-black: 900;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
-  padding: 20px;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
-h1 {
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Mis CSS */
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.header {
+  margin-bottom: 200px;
+  position: fixed;
+  width: 100%;
+  font-weight: var(--font-black);
+  font-size: 70px;
+  background-color: black;
+  color: white;
+  padding: 15px;
+  text-shadow: 2px 2px 2px honeydew;
   text-align: center;
-  color: #333;
+  margin-bottom: 200px;
+  z-index: 999;
 }
 
+main {
+  position: relative;
+  left: 0;
+  top: 150px;
+}
 
+#listaUsuarios {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.usuario {
+  display: flex;
+  gap: 20px;
+  width: 500px;
+  line-height: 25px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.foto {
+  display: flex;
+  justify-content: end;
+
+}
+
+.usuario img {
+  width: 130px;
+  display: block;
+  border: 1px solid black;
+}
+
+.datos {
+  border: 1px solid black;
+  padding: 15px;
+  width: 300px;
+}
+
+strong {
+  font-weight: var(--font-black);
+}
